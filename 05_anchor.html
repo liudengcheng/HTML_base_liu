@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anchor</title>
+</head>
+<body>
+<!--用户可以点击超链接，跳转至其他的资源文件-->
+<!--href属性必填，用于指定链接地址，网络地址必须写协议
+target属性选填，用于设置目标文件的打开方式，默认在当前窗口打开_self
+可以设置在新窗口打开（_blank）-->
+<span>baidu</span>
+<a href="https://www.baidu.com">百度1</a>
+<a href="01_page.html" target="_blank">百度2</a>
+<a href="www.baidu.com">百度3</a>
+<!--图片超链接-->
+<a href="03_list.html"><img src="northStar.jpg"></a>
+
+<!--href的特殊取值-->
+<!--空表示属性-->
+<a href="">href=''</a>
+<!--#表示锚点，链接至本页，不会造成刷新，修改url，链接至当前页面的指定位置-->
+<a href="#">href=‘#’</a>
+<!--javascript:void(0)阻止超链接默认的电机跳转功能，允许自定义点击事件-->
+<a href="javascript:void(0)">javascript:void(0)</a>
+</body>
+</html>

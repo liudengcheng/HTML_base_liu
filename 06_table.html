@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<!--表格由结构化的行和单元格组成，用于数据的展示或辅助排版-->
+<table border="1px" width="500px" height="500px">
+<!--  table row创建行-->
+  <tr>
+<!--    th表示单元格，自带加粗和居中效果-->
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>班级</th>
+  </tr>
+  <tr>
+    <td>zs</td>
+    <td>18</td>
+    <td>001</td>
+  </tr>
+  <tr>
+    <td>ls</td>
+    <td>19</td>
+    <td>001</td>
+  </tr>
+
+<!--单元格合并，为单元格添加属性
+colspan：跨列合并
+rowspan：跨行合并
+取无单位的数值，表示包含自身在内合并几个单元格-->
+</table>
+
+<table border="1px" width="300" height="200">
+<tr>
+    <td colspan="2">zs</td>
+    <td>18</td>
+
+  <tr>
+    <td>ls</td>
+    <td rowspan="2">19</td>
+<!--    删除被合并的单元格，保证结构完整-->
+    <td>001</td>
+  </tr>
+    <tr>
+    <td>ls</td>
+<!--行分组：
+可将表格中的若干行划分为一组，表示表头，标为和表格主体
+默情况下，所有的行都会自动添加到tbody（表格主体）中显示-->
+    <td>001</td>
+  </tr>
+</table>
+
+
+
+<table border="1px" width="300" height="100">
+<!--    thead表头-->
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="2">合计2</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <td>zs</td>
+        <td>23</td>
+    </tr><tr>
+        <td>zs</td>
+        <td>23</td>
+    </tr>
+    </tbody>
+
+
+</table>
+</body>
+</html>
