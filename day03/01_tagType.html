@@ -11,6 +11,8 @@
         img,input{
             width: 100px;
             height: 100px;
+            vertical-align: bottom;
+        /*   行内元素与行内默认按照文本的基础线对齐，可以设置vertical-align*/
         }
     </style>
 </head>
@@ -31,5 +33,19 @@
     <td>表格</td>
   </tr>
 </table>
+<div>
+    <div>
+    </div>
+    <h1></h1>
+    <img src="" alt="">
+    <a href=""></a>
+</div>
+<h2>
+    <p></p>
+</h2>
+<!--p标签只能嵌套行内，不能嵌套快-->
+<p>
+    <h1></h1>
+</p>
 </body>
 </html>
