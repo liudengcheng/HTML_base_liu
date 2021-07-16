@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body,ul{
+      margin:0;
+      padding:0;
+      list-style: none;
+    }
+    #banner{
+      width: 1000px;
+      margin:0 auto;
+      position: relative;
+    }
+    #banner img{
+      width:1000px;
+      height:400px;
+    }
+    #banner ul{
+      width: 90px;
+      position: absolute;
+      bottom: 20px;
+      /*根据操惨遭无相应方向的只计算偏移距离*/
+      left:50%;
+      margin-left:-45px;
+      /*background: red;*/
+    }
+    #banner li{
+      float: left;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background: grey;
+    }
+    #banner ul li:last-child{
+      margin:0;
+    }
+  </style>
+</head>
+<body>
+<div id="banner">
+  <img src="index_banner2.jpg" alt="加载失败">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+</body>
+</html>

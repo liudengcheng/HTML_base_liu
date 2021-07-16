@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    a{
+      text-decoration: none;
+      color:#fff;
+      margin-right:10px;
+      width: 92px;
+      display: inline-block;
+      font-size:20px;
+      text-align: center;
+      /*background: red;*/
+      /*文字在行内永远是居中显示的*/
+      line-height: 50px;
+    }
+    a:hover{
+      background: red;
+    }
+    #nav{
+      width: 500px;
+      margin: 0 auto;
+      background: orange;
+      font-size: 0;/*父元素字体大小设为零，解决空格问题，但需要给子元素加字体大小*/
+      height: 50px;
+    }
+    .no-margin{
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+<div id="nav">
+  <a href="">淘宝</a>
+  <a href="">淘宝</a>
+  <a href="">淘宝</a>
+  <a href="">淘宝</a>
+  <a href="" class="no-margin">淘宝</a>
+</div>
+</body>
+</html>
